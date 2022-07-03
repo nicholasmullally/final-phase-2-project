@@ -1,0 +1,36 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "name": "Garden",
+      "image": "https://img.theculturetrip.com/768x/smart/wp-content/uploads/2016/03/photo-2_top-10-places-to-stop-and-smell-the-flowers-this-spring-650x434.jpg",
+      "likes": 8
+    },
+    {
+      "id": 2,
+      "name": "Fisherman's Wharf",
+      "image": "https://www.omnihotels.com/-/media/images/globals/cityshots/san-francisco-fishermans-wharf-istock-52826370.jpg?h=660&la=en&w=1170",
+      "likes": 14
+    },
+    {
+      "id": 3,
+      "name": "Financial District",
+      "image": "https://www.downtownsf.org/wp-content/uploads/St-Pattys-Block-Party.png",
+      "likes": 14
+    },
+    {
+      "id": 4,
+      "name": "Dine",
+      "image": "https://www.downtownsf.org/wp-content/uploads/Credo.jpg",
+      "likes": 14
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "What an informative site!",
+      "name": "George",
+      "email": ""
+    }
+  ]
+}

@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #DBF9FC;
+    padding-bottom: 150px;
+    }
+
+
+/* div {
+    text-align: center;
+} */
+
+    h1 {
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        border: 3px solid green;
+        padding: 10px;
+      }
+
+h3 {
+    text-align: left;
+}
+    
+iframe {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800 px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form {
+    padding: 10px 50px;
+    background-color: aliceblue;
+    margin-left: 100px;
+    width: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+form div {
+    width: 400px;
+    margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form label {
+    width: 90px;
+    display: inline-block;
 }
+
+form input, form textarea {
+display: inline-block;
+width: 400px;
+}
+
+form .submit {
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: dodgerblue;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+.comments {
+    display:flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.comment {
+    padding: 5px;
+    display: flex;
+}
+.comment p:first-child {
+    width: 120px;
+    background-color: aliceblue;
+    padding: 5px;
+    font-size: 14px;
+}  
+
+.comment p:last-child {
+    padding: 5px 15px;
+    background-color: lightgrey;
+    width: 900px;
+}
+
+.like {
+    font-size: 70px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+.navbar {
+    padding: 0px 100px;
+    margin-bottom: 15px;
+    background-color:lightgrey;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 22px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.navbar a:hover, .active {
+    background-color: #DBF9FC;
+    border-left: 1px solid green;
+}
+

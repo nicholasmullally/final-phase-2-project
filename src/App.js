@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+
+import React from "react";
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home"
+import Wharf from "./pages/Wharf";
+import GoldenGatePark from './pages/Park';
+import Financial from "./pages/Financial";
+import Alcatraz from "./pages/Alcatraz";
+import NotFound from "./pages/NotFound";
+import Liker from './components/Liker';
+import List from "./components/List";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/wharf' element={<Wharf />} />
+          <Route path='/ggpark' element={<GoldenGatePark />} />
+          <Route path='/shopping' element={<Financial />} />
+          <Route path='/alcatraz' element={<Alcatraz />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+    <Liker />
     </div>
   );
 }
